@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace GreatReads
 {
@@ -22,6 +24,20 @@ namespace GreatReads
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+
+            //var connectionString = Configuration["ConnectionStrings:DefaultConnection"];
+            //using (SqlConnection connection = new SqlConnection(connectionString))
+            //{
+            //    connection.Open();
+            //}
+
+
+            //var connection = Configuration["ConnectionStrings:DefaultConnection"];
+            //services.AddEntityFrameworkSqlServer()
+            //    .AddDbContext<CuisAriaBEContext>(options =>
+            //    {
+            //        options.UseSqlServer(connection);
+            //    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
