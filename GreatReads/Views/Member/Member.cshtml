@@ -1,0 +1,19 @@
+﻿@model IList<Entities.User>
+
+@{
+    ViewData["Title"] = "Members Page";
+}
+
+
+
+
+<div>
+    <p><h3>Members Page</h3></p>
+</div>
+<div>
+    @foreach (var member in Model)
+    {
+        <p>Member: @member.LastName, @member.FirstName</p>
+
+    }
+</div>
