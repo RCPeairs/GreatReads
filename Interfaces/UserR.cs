@@ -7,7 +7,6 @@ namespace Repositories
 {
     public class UserR : IUserR
     {
-        //private readonly User _user = new User();
         private readonly DataServices _service = new DataServices();
 
         public IList<User> GetAllUsers()
@@ -22,7 +21,7 @@ namespace Repositories
 
         public int AddUser(User aNewUser)
         {
-            throw new NotImplementedException();
+            return _service.AddUser(aNewUser);
         }
 
         public int EditUser(User aUser)
