@@ -35,41 +35,5 @@ namespace GreatReads.Controllers
             }
             return View();
         }
-
-        //private User MakeTestRecord()
-        //{
-        //    User vtestRecord = new User
-        //    {
-        //         Id = 0
-        //        ,UserName = "TestUser"
-        //        ,Password = "123"
-        //        ,FirstName = "Test"
-        //        ,LastName = "User"
-        //        ,StreetAddress = "123 AnyStreet"
-        //        ,City = "AnyTown"
-        //        ,State = "AZ"
-        //        ,Zip = "85248"
-        //        ,Email = "TestUser@Yahoo.Com"
-        //        ,Phone = "123-4567"
-        //        ,Avatar = "Cliffs"
-        //        ,AdminNotes = "This is an admin note."
-        //        ,Administrator = false
-        //        ,Member = true
-        //        ,PendingMember = false
-        //        ,TextNewMember = true
-        //        ,TextNewActivity = false
-        //        ,TextChangeMyActivity = true
-        //        ,TextNewBook = false
-        //        ,TextNewBBPost = true
-        //        ,EmailNewMember = false
-        //        ,EmailNewActivity = true
-        //        ,EmailChangeMyActivity = false
-        //        ,EmailNewBook = true
-        //        ,EmailNewBBPost = false
-        //    };
-
-        //    return vtestRecord;
-        //}
-
-    }
+      }
 }
